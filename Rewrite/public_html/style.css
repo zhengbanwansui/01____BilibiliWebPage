@@ -4,38 +4,45 @@
  */
 body{margin:0px;padding:0px;} 
 #mainpage{ 
-    width: 100%; height: 3700px; 
+    width: 100%; height: 2400px; 
 } 
-#LoginAndRegisterPage{
-    width: 100%; height: 947px; 
-}
 #mainhead{ 
-    width: 100%; height: 170px; 
+    width: 100%; height: 170px;
     background-image: url(../Texture/置顶图高斯版.png);
+    background-position: center;
 }
-#LogAndRegmainhead{ 
-    width: 100%; height: 42px; 
-    background-color: #ffffff; 
-} 
+
 #mainleft{ 
-    width: 380px;height: 3217px; 
+    width: 10%;
+    height: 1917px; 
     background-color: #ffffff;float: left; 
 } 
-#LogAndRegmaincenter{ 
-    width: 100%; height: 905px; 
-    background-image: url(../Texture/登录和注册.png) ; 
-} 
 #maincenter{
-    width: 1160px;height: 3217px;
+    width: 80%;
+    height: 1917px;
     background-color: #ffffff;float: left;
 }
 #mainright{
-    width: 380px;height: 3217px;
+    width: 10%;
+    height: 1917px;
     background-color: #ffffff;float: left;
 }
 #mainfoot{
     width: 100%;height: 313px;
-     background-color: #f6f9fa; clear: both;
+     background-color: #f6f9fa; clear: both;background-repeat: no-repeat;
+     background-position: center;background-image:url(../Texture/底部图片.png);
+}
+#LogAndRegmaincenter{ 
+    width: 100%; height: 905px;
+    background-image: url(../Texture/登录和注册.png) ; 
+    background-repeat: no-repeat;background-position: center;
+} 
+#LogAndRegmainhead{ 
+    width: 100%; height: 42px; 
+    background-color: #ffffff; 
+}
+#LoginAndRegisterPage{
+    width: 100%; height: 947px; 
 }
 /*
  *从此以下为附属区域的CSS内容

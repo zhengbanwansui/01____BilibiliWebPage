@@ -320,7 +320,7 @@
             
             <!-- 网页底栏 -->
             <div id="mainfoot">
-                <div style="background-image:url(../Texture/底部图片.png);height:313px;width:1527px"></div>
+                
             </div>
         </div>
     </body>

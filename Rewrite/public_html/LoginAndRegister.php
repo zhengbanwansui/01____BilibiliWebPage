@@ -23,10 +23,6 @@
         <!-- JAVASCRIPTJAVASCRIPTJAVASCRIPT-->
     </head>
     <body>
-        <!-- 前端
-        javascript实现网页动态效果         -->
-        <!-- 后端
-        PHP连接数据库 && MySQL数据库的使用 -->
         <div id="LoginAndRegisterPage">
                 
             <!-- 网页顶栏 此处顶栏已经变成小条 -->
@@ -61,19 +57,21 @@
             
             <!-- 网页中间栏 -->
             <div id="LogAndRegmaincenter">
-                <div style="width: 1030px; height: 920px; float:left;">
+                <!-- 网页中间栏  左 -->
+                <div style="width: 65%; height: 920px; float:left;">
                     
                 </div>
-                <div style="width:  870px; height: 920px; float:left;">
-                    <div style="width: 870px; height: 160px;">
+                <!-- 网页中间栏  右 -->
+                <div style="width:  35%; height: 920px; float:left;">
+                    <div style="width: 630px; height: 160px;">
                     
                     </div>
-                    <div style="width: 870px; height: 760px;">
+                    <div style="width: 630px; height: 760px;">
                         
                         <!--表单form action是JumpToLogin.php这个网页-->
                         <form method="post" name="form" action= "">
-                            账号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_LAR" type="text" name="name"><br/>
-                            密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_LAR" type="password" name="password"><br/><br/><br/><br/><br/><br/>
+                            账号&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_LAR" type="text" name="name"><br/>
+                            密码&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_LAR" type="password" name="password"><br/><br/><br/><br/><br/><br/>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <input class="LARbutton1" type="submit" onclick="zhuCe()"  value="注册">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <input class="LARbutton2" type="submit" onclick="dengLu()"  value="登录">

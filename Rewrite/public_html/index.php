@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="refresh" content="0; url=/web">
         <title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../public_html/style.css">
     </head>
     <body>
-        <!-- 前端
-        javascript实现网页动态效果         -->
-        <!-- 后端
-        PHP连接数据库 && MySQL数据库的使用 -->
+        <!-- 网页整体DIV -->
         <div id="mainpage">
             
             <!-- 网页顶栏 -->
@@ -43,6 +41,7 @@
                             <input class="my_inputsousuo" type="submit" value="">
                         </5f4orm> 
                     </div> 
+            </div>
             </div>
             
             <!-- 网页左栏 -->
@@ -1074,46 +1073,8 @@
             
             <!-- 网页底栏 -->
             <div id="mainfoot">
-                <div style="background-image:url(../Texture/底部图片.png);height:313px;width:1527px"></div>
+                
             </div>
         </div>
     </body>
 </html>
-
-<!--<form action="http://localhost/BILIBILI_Php_Service/" method="post">
-                    用户名：<input type="text" name="user_name"><br>
-                    密&emsp;码：<input type="password" name="user_password"><br>
-                    <input type="submit" value="登录"><br>
-                </form>
-                中间栏！！！！！！！-->
-
-
-<!--
-以下内容是表单的实例
-                    <form>
-                    用户名<input type="text">
-                    <br>
-                    密码<input type="password">
-                    <br>
-                    （复选框如下）你要选择的项目？
-                    番剧<input type="checkbox">
-                    游戏<input type="checkbox">
-                    歌曲<input type="checkbox">
-                    <br>
-                    （单选框如下）你的性别是？
-                    男<input type="radio" name="sex">
-                    女<input type="radio" name="sex">
-                    <br>
-                    (下拉列表如下)
-                    <select>
-                        <option>选项1</option>
-                        <option>选项2</option>
-                    </select>
-                    <br>
-                    <textarea cols="30" rows="3">请再次添加个人资料</textarea>
-                    <br>
-                    （按钮！！！！！！！）
-                    <input type="button" value="按钮">
-                    <br>
-                    <input type="submit" value="确定">
-                </form>-->
