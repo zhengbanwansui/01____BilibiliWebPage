@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="refresh" content="0; url=/web">
         <title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,userscalable=no">
         <link rel="shortcut icon" href="../Texture/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="../public_html/style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <!-- 网页整体DIV -->
@@ -44,12 +43,14 @@
             </div>
             </div>
             
-            <!-- 网页左栏 -->
+            <!-- 网页左栏 
             <div style="" id="mainleft">
                 
             </div>
+            -->
             
             <!-- 网页中间栏 -->
+        <div id="maincenterFather">
             <div id="maincenter">
                 
                 <!-- 栏目标题栏 -->
@@ -1065,11 +1066,13 @@
                 
                 <img src="../Texture/虚幻.png" alt=""/>
             </div>
+        </div>
             
-            <!-- 网页右栏 -->
+            <!-- 网页右栏 
             <div style="" id="mainright">
                 
             </div>
+            -->
             
             <!-- 网页底栏 -->
             <div id="mainfoot">

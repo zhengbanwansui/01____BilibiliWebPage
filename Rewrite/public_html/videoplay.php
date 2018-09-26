@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../Texture/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="../public_html/style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <!-- 前端
@@ -46,12 +46,13 @@
                 </div>
             </div>
             
-            <!-- 网页左栏 -->
+<!--             网页左栏 
             <div style="" id="mainleft">
                 
-            </div>
+            </div>-->
             
             <!-- 网页中间栏 -->
+            <div id="maincenterFather">
             <div id="maincenter">
                 
                 <!-- 栏目标题栏 -->
@@ -294,11 +295,12 @@
                 <br/>
                 
             </div>
+            </div>
             
             <!-- 网页右栏 -->
-            <div style="" id="mainright">
+<!--            <div style="" id="mainright">
                 
-            </div>
+            </div>-->
             
             <!-- 网页底栏 -->
             <div id="mainfoot">

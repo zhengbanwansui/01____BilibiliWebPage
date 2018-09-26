@@ -2,24 +2,31 @@
 最主要的 CSS代码
 控制最大的几部分分区
  */
-body{margin:0px;padding:0px;} 
+body{border:0;padding:0;margin:0;text-decoration:none;} 
+@media screen and (max-device-width: 1300px)/*手机*/
+{/*media*/
+    
 #mainpage{ 
-    width: 100%; height: 2400px; 
+    width: 1150px; height: 2400px; 
 } 
 #mainhead{ 
     width: 100%; height: 170px;
     background-image: url(../Texture/置顶图高斯版.png);
     background-position: center;
+    display: absolutely;
 }
-
-#mainleft{ 
-    width: 10%;
+#mainleft{
+    width: 10%; 
     height: 1917px; 
     background-color: #ffffff;float: left; 
 } 
-#maincenter{
-    width: 80%;
+#maincenterFather{
     height: 1917px;
+    width: 100%;
+    display: flex;/*  使用flex动态布局  */   
+    justify-content:center;/*  在主轴上居中  */
+}
+#maincenter{
     background-color: #ffffff;float: left;
 }
 #mainright{
@@ -42,7 +49,7 @@ body{margin:0px;padding:0px;}
     background-color: #ffffff; 
 }
 #LoginAndRegisterPage{
-    width: 100%; height: 947px; 
+    width: 1920px; height: 947px; 
 }
 /*
  *从此以下为附属区域的CSS内容
@@ -550,6 +557,7 @@ body{margin:0px;padding:0px;}
 .input_LAR{
     width: 388px; height: 18px;
     padding: 10px;
+    border-width: 3px;
     margin-bottom: 32px;
 }
 .LARbutton1{
@@ -566,3 +574,575 @@ body{margin:0px;padding:0px;}
     border:1px solid #eeeeee;
     font-size: 12px;
 }
+}/*media*/
+@media screen and (min-device-width: 1300px)/*电脑*/
+{/*media*/
+#mainpage{ 
+    width: 100%; height: 2400px; 
+} 
+#mainhead{ 
+    width: 100%; height: 170px;
+    background-image: url(../Texture/置顶图高斯版.png);
+    background-position: center;
+    display: absolutely;
+}
+#mainleft{ 
+    width: 10%;
+    height: 1917px; 
+    background-color: #ffffff;float: left; 
+} 
+#maincenterFather{
+    height: 1917px;
+    width: 100%;
+    display: flex;/*  使用flex动态布局  */   
+    justify-content:center;/*  在主轴上居中  */
+}
+#maincenter{
+    background-color: #ffffff;float: left;
+}
+#mainright{
+    width: 10%;
+    height: 1917px;
+    background-color: #ffffff;float: left;
+}
+#mainfoot{
+    width: 100%;height: 313px;
+     background-color: #f6f9fa; clear: both;background-repeat: no-repeat;
+     background-position: center;background-image:url(../Texture/底部图片.png);
+}
+#LogAndRegmaincenter{ 
+    width: 100%; height: 905px;
+    background-image: url(../Texture/登录和注册.png) ; 
+    background-repeat: no-repeat;background-position: center;
+} 
+#LogAndRegmainhead{ 
+    width: 100%; height: 42px; 
+    background-color: #ffffff; 
+}
+#LoginAndRegisterPage{
+    width: 1920px; height: 947px; 
+}
+/*
+ *从此以下为附属区域的CSS内容
+ */
+#mainhead_left{ 
+    margin:0px; padding:0px; 
+    width: 63%; height:100%; 
+    float: left; 
+} 
+#LogAndRegmainhead_left{ 
+    margin:0px; padding:0px; 
+    width: 63%; height:100%; 
+    float: left; 
+} 
+#mainhead_right{
+    margin:0px;padding:0px;
+    width: 37%; height:100%;
+    float: left;
+}
+#LogAndRegmainhead_right{
+    margin:0px;padding:0px;
+    width: 37%; height:100%;
+    float: left;
+}
+#mainhead_right_up{
+    width: 100%; height:68%;
+}
+#LogAndRegmainhead_right_up{
+    width: 100%; height:100%;
+}
+#mainhead_right_down{
+    width: 100%; height:32%;
+}
+#maininfo001{
+    width:1160px;height:220px;
+    padding-bottom: 40px;
+}
+#maininfo001_left{
+    height: 100%;
+    width: 440px;
+    float:left;
+}
+#maininfo001_right{
+    height: 100%;
+    width: 720px;
+    float: left;
+}
+.maininfo002{
+    display: block;
+    width: 1160px;
+    height: 400px;
+    padding-bottom: 15px;
+    background-color: #ffffff;
+}
+.maininfo002_left{
+    width: 720px;
+    height: 400px;
+    float:left;
+}
+.maininfo002_right{
+    width: 440px;
+    height: 400px;
+    float:left;
+}
+.maininfo002_lefttop{
+    width: 720px;
+    height: 50px;
+}
+.maininfo002_leftbottom{
+    width: 720px;
+    height: 350px;
+}
+.right_up_paihang{
+    padding-top: 20px;
+    width: 440px;
+    height: 20px;
+}
+.right_bottom_paihang{
+    width: 440px;
+    height: 340px;
+    background-color: #ffffff;
+}
+/*以上为div的布局*/
+.my_a:link{
+    color: #000; 
+    text-decoration: none;
+    padding: 9px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.my_a:visited{
+    background-color: rgba(255,255,255,0.3);
+    color: #000;
+    padding: 9px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.my_a:hover{
+    background-color: rgba(255,255,255,0.3);
+    color: #000;
+    padding: 9px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.my_a:active{
+    color: #000;
+    padding: 9px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.my_li{
+    float:left; list-style:none; font-size:6px; 
+}
+.my_li2first{
+    float:left; list-style:none; font-size:6px; padding-top: 11px; margin-left: 350px;
+}
+.my_li2{
+    float:left; list-style:none; font-size:6px; padding-top: 11px;
+}
+
+.touxiang_weidenglu{
+    width: 35px; height: 35px; padding:3px; margin-left:150px;
+}
+.my_litougao{
+    list-style:none; 
+}
+.my_atougao:link{
+    float:left;
+    color: #ffffff; 
+    font-size:15px;
+    text-decoration: none;
+    background-image: url(../Texture/投稿按钮.png);
+    padding-bottom: 18px;
+    padding-top: 10px;
+    padding-right: 12px;
+    padding-left: 12px; 
+}
+.my_atougao:visited{
+    color: #ffffff; 
+    font-size:15px;
+}
+.my_atougao:hover{
+    color: #ffffff;
+    font-size:15px;
+}
+.my_atougao:active{
+    color: #ffffff; 
+    font-size:15px;
+}
+/*paihangbang*/
+.my_apaihangbang:link{
+    box-shadow:0px 0px 2px 2px rgba(30,30,30,0.3);
+    float: left;
+    text-decoration: none;
+    font-size: 6px;
+    text-align: center;
+    line-height: 32px;
+    color: rgba(242,93,142,1);
+    display:block;
+    width: 68px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: hsla(0,0%,100%,.88);
+}
+.my_apaihangbang:visited{
+    background-color: #ffffff;
+    color: rgba(242,93,142,1);
+}
+.my_apaihangbang:hover{
+    background-color: #ffffff;
+    color: rgba(242,93,142,1);
+}
+.my_apaihangbang:active{
+    background-color: hsla(0,0%,100%,.88);
+    color: rgba(242,93,142,1);
+}
+/* 搜索框 */
+.my_inputsousuokuang{width: 224px;height: 32px;
+    float: left;
+    border:0px;
+    font-size: 6px; 
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 2px;
+    margin-right: 0px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: hsla(0,0%,100%,.88);
+/*    box-shadow:0px 0px 2px 2px rgba(30,30,30,0.3);*/
+    box-shadow:-2px 0 2px rgba(30,30,30,0.3), /*左边阴影*/  
+    2px 0 2px rgba(1,1,1,0), /*右边阴影*/  
+    0 -2px 2px rgba(30,30,30,0.3), /*顶部阴影*/  
+    0 2px 2px rgba(30,30,30,0.3); /*底边阴影*/  
+}
+/* 搜索按钮 */
+.my_inputsousuo{width: 48px;height: 32px;
+    border:none;
+    font-size: 6px; 
+    color: #000000;
+    padding: 0px;
+    border-radius: 0px 4px 4px 0px;
+    background-color: hsla(0,0%,100%,.88);
+    background-image: url(../Texture/搜索蓝色.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    box-shadow:-2px 0 2px rgba(1,1,1,0), /*左边阴影*/  
+    2px 0 2px rgba(30,30,30,0.3), /*右边阴影*/  
+    0 -2px 2px rgba(30,30,30,0.3), /*顶部阴影*/  
+    0 2px 2px rgba(30,30,30,0.3); /*底边阴影*/  
+/*    box-shadow:0px 0px 2px 2px rgba(30,30,30,0.3),*/
+}
+/* 以下内容
+ * 非常重要
+ * 是内容主题
+ */
+/* 导航菜单栏 */
+#maincenter_top_menu{
+    width: 1160px; height: 51px;
+    background-color: #ffffff;
+    padding-top: 8px;
+    margin-bottom: 4px;
+}
+/* 首页栏 */
+.my_limenutop_shouye{
+    float: left;
+    width: 48px; height: 48px;
+    list-style:none;
+    display: block;
+}
+/* 主体1栏li */
+.my_limenutop_main1{
+    margin-left:4px;
+    margin-right:5px;
+    float: left;
+    width: 48px; height: 48px;   
+    list-style:none;
+    display: block;
+}
+/*主体1栏a*/
+.my_amenutop_main1:link{
+    width: 48px; height: 12px;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size:12px;
+}
+.my_amenutop_main1:visited{
+    color: #000000;
+}
+.my_amenutop_main1:hover{
+    color: #000000;
+}
+.my_amenutop_main1:active{
+    color: #000000;
+}
+/*主体1栏 视频计数文字*/
+.my_limenutop_main1_divupanddown{
+    width:100%;height:50%;
+}
+.my_limenutop_main1_divup_span{
+    font-size:12px;margin-left: 12px;color:#ffffff;background-color: #ffafc9;border-radius: 3px;
+}
+.my_limenutop_main1_divup_span1{
+    font-size:12px;margin-left: 15px;color:#ffffff;
+    background-image:url(../Texture/swan1);
+    width:18px;
+    height: 18px;
+    background-position:center;
+    display: block;
+}
+.my_limenutop_main1_divup_span2{
+    font-size:12px;margin-left: 15px;color:#ffffff;
+    background-image:url(../Texture/swan2);
+    width:18px;
+    height: 18px;
+    background-position:center;
+    display: block;
+}
+.my_limenutop_main1_divup_span3{
+    font-size:12px;margin-left: 15px;color:#ffffff;
+    background-image:url(../Texture/swan3);
+    width:18px;
+    height: 18px;
+    background-position:center;
+    display: block;
+}
+.my_limenutop_main1_divup_span4{
+    font-size:12px;margin-left: 15px;color:#ffffff;
+    background-image:url(../Texture/swan4);
+    width:18px;
+    height: 18px;
+    background-position:center;
+    display: block;
+}
+.shouyexiaofangzi{
+    width:20px;
+    height:20px;
+    background-image: url(../Texture/首页小房子.png);
+    text-align: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: 14px;
+}
+.main_0x0002{
+    margin:0px 10px 10px 10px;
+    width:160px;height:100px;
+    background-size:160px 100px;
+    float:left;
+    /*background-image: url(../Texture/0x0002.png);*/
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.main_0x0003{
+    margin:10px 10px 0px 10px;    
+    width:160px;height:100px;
+    background-size:160px 100px;
+    float:left;
+    /*background-image: url(../Texture/0x0003.png);*/
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+/*
+ *littleicon1234456789
+ */
+.littleicon1{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon动画.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon2{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon番剧.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon3{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon国创.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon4{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon音乐.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon5{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon舞蹈.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon6{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon游戏.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon7{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon科技.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon8{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon生活.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon9{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon鬼畜.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon10{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon时尚.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon11{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon广告.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon12{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon娱乐.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon13{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon影视.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.littleicon14{
+    float: left;
+    background-image: url(../Texture/主DIV各栏目小图标/icon放映厅.png);
+    width:34px;
+    height:34px;
+    display: block;
+    padding:5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*icons  over*/
+.my_amain{
+    text-decoration: none;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-left: 8px;
+    float: left;
+    color: #000000;
+}
+.main_0x0004{
+    margin:10px 10px 50px 10px;    
+    width:160px;height:100px;
+    background-size:160px 100px;
+    float:left;
+    background-image: url(../Texture/0x0004.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.my_ulpanhang{
+    margin: 0px;
+    padding: 0px;
+}
+.my_lipaihang{
+    list-style:none;
+    width:235px;height:18px;
+    margin-top: 20px;
+}
+.my_upstic{
+    height: 18px;
+    font-size: 12px;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: rgb(242,93,142);
+}
+.my_span_paihangwenzi{
+    font-size: 12px;
+    margin-left: 6px;
+}
+.input_LAR{
+    width: 388px; height: 18px;
+    padding: 10px;
+    border-width: 3px;
+    margin-bottom: 32px;
+}
+.LARbutton1{
+    color: #ffffff;
+    background-color: #00a7de;
+    border:1px solid #0381aa;
+    font-size: 14px;
+    width: 186px; height: 38px;
+    font-size: 12px;
+}
+.LARbutton2{
+    background-color: #ffffff;
+    width: 186px; height: 38px;
+    border:1px solid #eeeeee;
+    font-size: 12px;
+}
+}/*media*/
