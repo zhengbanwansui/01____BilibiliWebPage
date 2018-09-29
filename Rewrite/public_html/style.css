@@ -3,11 +3,10 @@
 控制最大的几部分分区
  */
 body{border:0;padding:0;margin:0;text-decoration:none;} 
-@media screen and (max-device-width: 1300px)/*手机*/
+@media screen and (min-device-width: 1300px)/*电脑*/
 {/*media*/
-    
 #mainpage{ 
-    width: 1150px; height: 2400px; 
+    width: 100%; height: 2400px; 
 } 
 #mainhead{ 
     width: 100%; height: 170px;
@@ -15,8 +14,8 @@ body{border:0;padding:0;margin:0;text-decoration:none;}
     background-position: center;
     display: absolutely;
 }
-#mainleft{
-    width: 10%; 
+#mainleft{ 
+    width: 10%;
     height: 1917px; 
     background-color: #ffffff;float: left; 
 } 
@@ -49,7 +48,7 @@ body{border:0;padding:0;margin:0;text-decoration:none;}
     background-color: #ffffff; 
 }
 #LoginAndRegisterPage{
-    width: 1920px; height: 947px; 
+    width: 100%; height: 947px; 
 }
 /*
  *从此以下为附属区域的CSS内容
@@ -575,10 +574,11 @@ body{border:0;padding:0;margin:0;text-decoration:none;}
     font-size: 12px;
 }
 }/*media*/
-@media screen and (min-device-width: 1300px)/*电脑*/
+@media screen and (max-device-width: 1300px)/*手机*/
 {/*media*/
+    
 #mainpage{ 
-    width: 100%; height: 2400px; 
+    width: 1150px; height: 2400px; 
 } 
 #mainhead{ 
     width: 100%; height: 170px;
@@ -586,8 +586,8 @@ body{border:0;padding:0;margin:0;text-decoration:none;}
     background-position: center;
     display: absolutely;
 }
-#mainleft{ 
-    width: 10%;
+#mainleft{
+    width: 10%; 
     height: 1917px; 
     background-color: #ffffff;float: left; 
 } 
@@ -620,7 +620,7 @@ body{border:0;padding:0;margin:0;text-decoration:none;}
     background-color: #ffffff; 
 }
 #LoginAndRegisterPage{
-    width: 1920px; height: 947px; 
+    width: 1150px; height: 947px; 
 }
 /*
  *从此以下为附属区域的CSS内容

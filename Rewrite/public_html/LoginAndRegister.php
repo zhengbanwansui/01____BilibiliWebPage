@@ -58,16 +58,14 @@
             <!-- 网页中间栏 -->
             <div id="LogAndRegmaincenter">
                 <!-- 网页中间栏  左 -->
-                <div style="width: 65%; height: 920px; float:left;">
+                <div style="width: 55%; height: 920px; float:left;">
                     
                 </div>
                 <!-- 网页中间栏  右 -->
-                <div style="width:  35%; height: 920px; float:left;">
-                    <div style="width: 630px; height: 160px;">
-                    
+                <div style="width:  45%; height: 920px; float:left;">
+                    <div style="width: 100%; height: 160px;">
                     </div>
-                    <div style="width: 630px; height: 760px;">
-                        
+                    <div style="width: 100%; height: 760px;">
                         <!--表单form action是JumpToLogin.php这个网页-->
                         <form method="post" name="form" action= "">
                             账号&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_LAR" type="text" name="name"><br/>

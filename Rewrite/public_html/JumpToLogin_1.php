@@ -1,3 +1,6 @@
+<!--数据库名：rewrite
+    表名··：relog
+    表内信息：varchar类型name  varchar类型password-->
 <?php
 echo "<h1>登录</h1><br><br><br>";
 $user=$_POST['name'];
