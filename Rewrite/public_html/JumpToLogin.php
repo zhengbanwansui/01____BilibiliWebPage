@@ -5,6 +5,7 @@ $pass=$_POST['password'];
 echo "用户名：".$user;
 echo "密码：".$pass;
 $con = mysqli_connect("localhost","root","");
+mysqli_set_charset($con, 'utf8');
 if (!$con)
 {
     echo '\nCould not connect MySQL\n';
