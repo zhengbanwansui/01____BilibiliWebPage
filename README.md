@@ -1,6 +1,6 @@
 # BILIBILI-website
 【B站主页 + 登录注册】
-此项目非常正直的没有用任何框架 原因是刚学了一点前端就觉得自己无敌了
+此项目非常正直的没有用任何框架 原因是刚学了一点前端就蜜汁自信然后死磕做出来的
 using : PHP/html5/css/Photoshop/MySQL
 用户名：root
 密码：空
